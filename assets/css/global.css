@@ -11797,4 +11797,9 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 
+.color-circle {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
 /*# sourceMappingURL=global.css.map */

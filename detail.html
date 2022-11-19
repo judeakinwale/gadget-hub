@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./assets/css/global.css">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <title>Detail</title>
@@ -16,35 +17,24 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom">
       <div class="container">
-        <a class="navbar-brand" href="#">Ecommerce</a>
+        <a class="navbar-brand" href="./index.html">Ecommerce</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Shop</a>
+              <a class="nav-link active" aria-current="page" href="./list.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="./list.html">Reviews</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
             <li class="nav-item">
-              <a class="nav-link">About</a>
+              <a class="nav-link" href="./about.html">About</a>
             </li>
             <form class="d-flex" role="search">
-              <button class="btn border-0 bg-none" type="submit">Search</button>
-              <input class="form-control me-2 border-0 shadow-none" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn bg-none text-light border-0 ms-md-3" type="submit"><i class="bi bi-search"></i></button>
+              <input class="form-control bg-primary me-2 rounded-0 border-0 shadow-none" type="search" placeholder="Search" aria-label="Search">
             </form>
           </ul>
           <!-- <form class="d-flex" role="search">
@@ -53,10 +43,10 @@
           </form> -->
           <ul class="d-flex navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">cart</a>
+              <a class="nav-link" href="./cart.html"><i class="bi bi-bag text-light"></i><span class="ms-1">3</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="#">Login</a>
             </li>
           </ul>
         </div>
@@ -64,15 +54,99 @@
     </nav>
     <!-- Navigation Bar -->
 
-    Sub Header Bar -->
-    <div class="container-fluid bg-primary">
+    <!-- Sub Header Bar -->
+    <!-- <div class="container-fluid bg-primary">
       <div class="container text-light py-5">
         <h2 class="m3-4">Shop Iphones</h2>
       <p>Get the latest phones in all categories</p>
       </div>
-    </div>
-    <!-- Sub Header Bar
+    </div> -->
+    <!-- Sub Header Bar -->
   </header>
   
+  <main>
+    <!-- Product Detail Section -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- Product Image -->
+          <div class="col-md-6 my-5">
+            <img src="https://via.placeholder.com/400x600" class="img img-fluid" alt="">
+          </div>
+          <!-- Product Image -->
+
+          <!-- Product Basic Info -->
+          <div class="col-md-6 my-5">
+            
+            <!-- Product Title -->
+            <h1>Iphone 14 Pro Max - 512Gb</h1>
+
+            <!-- Product Rating -->
+            <h5>
+              <span class="text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+              </span> 
+              <span class="mx-2">321</span>Reviews
+            </h5>
+            <!-- Product Rating -->
+
+            <!-- Product Price -->
+            <div class="my-4">
+              <label for="">Price</label>
+              <h3 class="text-danger">
+                <span class="">N820,000</span>
+                &mdash;
+                <span class="mx-3">N850,000</span>
+              </h3>
+            </div>
+            <!-- Product Price -->
+
+            <!-- Product Variants (Color) -->
+            <div class="my-4">
+              <label for="">Color</label>
+              <p class="mt-2">
+                <span class="d-inline-block rounded-circle border color-circle me-2" style="background-color: lightskyblue;"></span>
+                <span class="d-inline-block rounded-circle border color-circle mx-2" style="background-color: orange;"></span>
+                <span class="d-inline-block rounded-circle border color-circle mx-2" style="background-color: white;"></span>
+                <span class="d-inline-block rounded-circle border color-circle mx-2" style="background-color: black;"></span>
+              </p>
+            </div>
+            <!-- Product Variants (Color) -->
+
+            <!-- Product Storage -->
+            <div class="my-4">
+              <label for="">Storage</label>
+              <h4 class="">
+                <span class="">512Gb</span>
+              </h4>
+            </div>
+            <!-- Product Storage -->
+
+            <!-- Product Quantity -->
+            <div class="my-4">
+              <div class="d-inline-block">
+                <label class="mb-2" for="">Quantity</label>
+                <div class="input-group bg-none border border-primary w-50 mb-3">
+                  <a href="#" class="input-group-text bg-white border-0 shadow-none text-decoration-none">-</a>
+                  <input type="tel" class="form-control border-0 shadow-none text-center" aria-label="Count" placeholder="1" value="1">
+                  <a href="#" class="input-group-text bg-white border-0 shadow-none text-decoration-none">+</a>
+                  <!-- <span class="bg-white border-0 input-group-text">+</span> -->
+                </div>
+              </div>
+            </div>
+            <!-- Product Quantity -->
+
+          </div>
+          <!-- Product Basic Info -->
+        </div>
+      </div>
+    </section>
+    <!-- Product Detail Section -->
+
+  </main>
 </body>
 </html>
