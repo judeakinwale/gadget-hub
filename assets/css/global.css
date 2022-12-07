@@ -11793,8 +11793,12 @@ textarea.form-control-lg {
 }
 .featured-carousel {
   max-height: 500px;
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
+}
+
+.carousel__image {
+  height: 500px;
 }
 
 .color-circle {
