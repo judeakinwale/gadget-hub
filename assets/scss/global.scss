@@ -22,6 +22,13 @@ $primary: #001A88;
   }
 }
 
+.product {
+  &__image {
+    padding: 0;
+    height: 75vh;
+  }
+}
+
 .color-circle {
   width: 3rem !important;
   height: 3rem !important;

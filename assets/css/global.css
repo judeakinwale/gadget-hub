@@ -11801,6 +11801,11 @@ textarea.form-control-lg {
   height: 500px;
 }
 
+.product__image {
+  padding: 0;
+  height: 75vh;
+}
+
 .color-circle {
   width: 3rem !important;
   height: 3rem !important;
