@@ -72,69 +72,70 @@
       <div class="my-5">
         <h2 class="">Checkout</h2>
         <p class="nav text-primary">
-          <a class="text-Primary nav-link fw-bold">Address</a> <span class="nav-link">&mdash;&mdash;&mdash;</span>  
+          <a class="text-Primary nav-link">Address</a> <span class="nav-link">&mdash;&mdash;&mdash;</span>  
           <a class="text-Primary nav-link">Shipping</a> <span class="nav-link">&mdash;&mdash;&mdash;</span>  
-          <a class="text-Primary nav-link">Payment</a>
+          <a class="text-Primary nav-link fw-bold">Payment</a>
         </p>
 
-        <div class="row mt-5">
-          <!-- Shipping Information -->
+        <div class="row mt-4">
+          <!-- Payment Information -->
           <div class="col-md-5 pe-5">
-            <h4 class="mb-3">Shipping Information</h4>
+            
+            <!-- Payment Options -->
+            <div class="mb-4">
+              <a href="" class="btn rounded-0 border-primary px-5 me-3">Paypal</a>
+              <a href="" class="btn rounded-0 border-primary px-5 bg-dark text-light">Apple Pay</a>
+            </div>        
+            <!-- Payment Options -->
+            
+            <h4 class="mb-3">Payment Information</h4>
 
             <form method="post" class="row">
-              <div class="col-6 mb-3">
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" aria-label="First Name">
-              </div>
-              <div class="col-6 mb-3">
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name" aria-label="Last Name">
+              <div class="col-12 mb-3">
+                <input type="text" class="form-control" id="cartHolderName" placeholder="Cardholder Name" aria-label="Cardholder Name">
               </div>
               <div class="col-12 mb-3">
-                <input type="text" class="form-control" id="address" placeholder="Address">
-              </div>
-              <div class="col-12 mb-3">
-                <input type="text" class="form-control" id="appartment" placeholder="Apartment, suite, etc (optional)">
-              </div>
-              <div class="col-12 mb-3">
-                <input type="text" class="form-control" id="city" placeholder="City">
+                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" aria-label="Card Number">
               </div>
               <div class="col-4 mb-3">
-                <select class="form-select" id="country" aria-placeholder="Country" aria-label="Country">
-                  <option class="text-muted" selected>Country</option>
+                <input type="month" class="form-control" id="month" placeholder="Month" aria-label="Month">
+                <!-- <select class="form-select" id="month" aria-placeholder="Month" aria-label="Month">
+                  <option class="text-muted" selected>Month</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
-                </select>
+                </select> -->
               </div>
               <div class="col-4 mb-3">
-                <select class="form-select" id="State" aria-placeholder="State" aria-label="State">
-                  <option class="text-muted" selected>State</option>
+                <input type="year" class="form-control" id="year" placeholder="Year" aria-label="Year">
+                <!-- <select class="form-select" id="year" aria-placeholder="Year" aria-label="Year">
+                  <option class="text-muted" selected>Year</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
-                </select>
+                </select> -->
               </div>
               <div class="col-4 mb-3">
-                <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+                <input type="text" class="form-control" id="cvc" placeholder="CVC">
               </div>
-              <div class="col-12 mb-3">
-                <input type="text" class="form-control" id="optionalDetails" placeholder="Other Details (optional)">
-              </div>
-              <div class="col-12 form-check m-3 text-muted">
-                <input class="form-check-input" type="checkbox" value="" id="saveInfo">
+              <div class="col-12 form-check form-switch ps-3 my-3 text-muted">
+                <input class="form-check-input float-end" type="checkbox" role="switch" id="saveInfo" checked>
                 <label class="form-check-label" for="saveInfo">
-                  Save Contact Information
+                  Save card data for future payments
                 </label>
               </div>
               
               <div class="col-12">
-                <a href="shipping.html" class="btn btn-primary w-100 py-2">Continue to Shipping</a>
+                <a href="./payment-confirm.html" class="btn btn-primary w-100 py-2">Pay with Card</a>
+              </div>
+              <div class="col-12">
+                <a href="./payment-confirm.html" class="btn btn-primary w-100 my-3 py-2">Bank Transfer</a>
               </div>
 
             </form>
 
           </div>
-          <!-- Shipping Information -->
+          <!-- Payment Information -->
 
           <!-- Empty Space between columns -->
           <div class="col-md-2 pe-5"></div>

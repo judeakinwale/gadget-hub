@@ -33,3 +33,10 @@ $primary: #001A88;
   width: 3rem !important;
   height: 3rem !important;
 }
+
+.checkbox {
+  &--lg {
+    width: 24px;
+    height: 24px;
+  }
+}

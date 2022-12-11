@@ -11811,4 +11811,9 @@ textarea.form-control-lg {
   height: 3rem !important;
 }
 
+.checkbox--lg {
+  width: 24px;
+  height: 24px;
+}
+
 /*# sourceMappingURL=global.css.map */
