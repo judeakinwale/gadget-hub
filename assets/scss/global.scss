@@ -26,6 +26,10 @@ $primary: #001A88;
   &__image {
     padding: 0;
     height: 75vh;
+    &--carousel {
+      padding: 0;
+      height: 75vh;
+    }
   }
 }
 
